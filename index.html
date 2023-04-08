@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button using jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">Toggle Button using jQuery</h1>
+    <div class="container">
+        <button id="showBtn">Show</button>
+        <button id="hideBtn">Hide</button>
+        <button id="toggleBtn">Toggle</button>
+    </div>
+    <img src="./img/img.jpg" alt="song ji hyo" id="img">
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#img").hide();
+
+        $("#showBtn").click(function(){
+            $("#img").fadeIn("slow");
+        })
+
+        $("#hideBtn").click(function(){
+            $("#img").fadeOut("slow");
+        })
+
+        $("#toggleBtn").click(function(){
+            $("#img").fadeToggle(1000);
+        })
+    })
+</script>
+</html>

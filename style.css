@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 10px 15px;
+}
+img {
+    width: 400px;
+    margin: 0 15px;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 20px;
+    color: white;
+    margin: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.container > button:first-child {
+    background-color: green;
+}
+
+.container > button:nth-child(2) {
+    background-color: red;
+}
+
+.container > button:last-child {
+    background-color: blue;
+}
+
